@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)
 	CATEGORY:=Network
 	TITLE:=Revive unavailable songs for Netease Cloud Music (Golang)
 	URL:=https://github.com/cnsilvan/UnblockNeteaseMusic
-	DEPENDS:=$(GO_ARCH_DEPENDS)
+	DEPENDS:=$(GO_ARCH_DEPENDS) +libpthread
 endef
 define Package/$(PKG_NAME)/description
 	Revive unavailable songs for Netease Cloud Music (Golang)
